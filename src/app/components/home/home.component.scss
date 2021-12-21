@@ -59,6 +59,9 @@
             margin-bottom: 0;
             display: block;
             text-align: center;
+            h1{
+                font-size: 55px;
+            }
             div{
                 &:first-child{
                    width:auto;
