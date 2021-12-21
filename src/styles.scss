@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import "helpers/mixins";
+@import "helpers/vars";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $beige-color;
+    font-smoothing: antialiased;
+    background-image: url(/../assets/images/paws_background.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+a:hover{
+    opacity: .8;
+}
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    font: {
+        size: 21px;
+        weight: 600
+    }
+    letter-spacing: 2px;
+    background-color: $brown-color;
+    border-radius: 15px;
+    color: $beige-color;
+    text-decoration: none;
+    padding:10px 30px;
+    text-transform: uppercase;
+}

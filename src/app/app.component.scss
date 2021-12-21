@@ -1,0 +1,27 @@
+@import "../helpers/mixins";
+@import "../helpers/vars";
+.main{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-image: url(/../assets/images/light_background.png), url(/../assets/images/dark_background.png);
+    background-position: -25vw bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    overflow-x: hidden;
+}
+@media screen and (max-width:1024px){
+    .main{
+        background:none;
+    }
+}
+@media screen and (max-width:980px){
+    .main{
+        width: 100% !important;
+        height: 100% !important;
+        background-image: url(/../assets/images/light_background.png), url(/../assets/images/dark_background.png);
+        background-position: 0 bottom, left top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain, cover;
+    }
+}

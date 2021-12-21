@@ -1,0 +1,66 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Roboto&display=swap');
+@font-face {
+    font-family: 'MADETommySoftMedium';
+    src: url('/assets/fonts/made-tommy-soft/MADE_Tommy_Soft_Medium.eot'); /* IE9 Compat Modes */
+    src: url('/assets/fonts/made-tommy-soft/MADE_Tommy_Soft_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/fonts/made-tommy-soft/MADE_Tommy_Soft_Medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/fonts/made-tommy-soft/MADE_Tommy_Soft_Medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/assets/fonts/made-tommy-soft/MADE_Tommy_Soft_Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/assets/fonts/made-tommy-soft/MADE_Tommy_Soft_Medium.svg#svgMADETommySoftMedium') format('svg'); /* Legacy iOS */
+  }
+  @font-face {
+    font-family: "pet-shop-landing";
+    src:url("/assets/fonts/pet-shop-landing/pet-shop-landing.eot");
+    src:url("/assets/fonts/pet-shop-landing/pet-shop-landing.eot?#iefix") format("embedded-opentype"),
+      url("/assets/fonts/pet-shop-landing/pet-shop-landing.woff") format("woff"),
+      url("/assets/fonts/pet-shop-landing/pet-shop-landing.ttf") format("truetype"),
+      url("/assets/fonts/pet-shop-landing/pet-shop-landing.svg#pet-shop-landing") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  [data-icon]:before {
+    font-family: "pet-shop-landing" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  [class^="icon-"]:before,
+  [class*=" icon-"]:before {
+    font-family: "pet-shop-landing" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-instagram:before {
+    content: "\61";
+  }
+  .icon-whatsapp:before {
+    content: "\62";
+  }
+  .icon-twitter:before {
+    content: "\63";
+  }
+  .icon-facebook:before {
+    content: "\64";
+  }
+//Colors
+$beige-color: #f5f4f0;
+$brown-color: #7b3a43;
+$orange-color: #ff821d;
+

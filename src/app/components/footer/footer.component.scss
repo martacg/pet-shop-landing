@@ -1,0 +1,50 @@
+@import "../../../helpers/mixins";
+@import "../../../helpers/vars";
+
+.footer{
+    .footer--content{
+        text-align: right;
+        margin: 35px 0;
+        .socialmedia{
+            list-style: none;            
+            li{
+                background-color: $brown-color;
+                border-radius: 100%;
+                color: $beige-color;
+                text-decoration: none;
+                padding:10px;
+                margin: 0 2px;
+                display: inline-block;
+                height: 20px;
+                a{
+                    font:{
+                        size: 20px;
+                    }
+                    color: $beige-color;
+                    text-decoration: none;
+                }
+            }
+        }
+        p{
+            display: block;
+            width:100%;
+            a{
+                color: $brown-color;
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+                font:{
+                    size: 18px;
+                    weight: 600
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:980px){
+    .footer{
+        .footer--content{
+            text-align: center;
+        }
+    }
+}

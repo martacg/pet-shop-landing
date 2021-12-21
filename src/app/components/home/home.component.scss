@@ -1,0 +1,79 @@
+@import "../../../helpers/mixins";
+@import "../../../helpers/vars";
+.home{
+    .home--content{
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+        margin: 35px;
+        div{
+            &:first-child{
+               width:60vw;
+            }
+            &:last-child{
+                width:40vw;
+            }
+        }
+        figure{
+            margin:0;
+            text-align: left;
+            img{
+                max-width:100%;
+                position: relative;
+                bottom: -15vh;
+            }
+        }
+        h1{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 67px;
+            color: $orange-color;
+            text-transform: uppercase;
+            word-break: break-word;
+            letter-spacing: 3px;
+        }
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font:{
+                size: 27px;
+                weight: 600;
+            }
+            letter-spacing: 2px;
+            color: $brown-color;
+            text-transform: uppercase;
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            color: $brown-color;
+            letter-spacing: 1px;
+            line-height: 1.4em;
+            margin: 30px auto;
+        }
+    }
+}
+
+
+@media screen and (max-width:980px){
+    .home{
+        .home--content{
+            margin-bottom: 0;
+            display: block;
+            text-align: center;
+            div{
+                &:first-child{
+                   width:auto;
+                }
+                &:last-child{
+                    width:auto;
+                    padding: 35px 0;
+                }
+            }
+            figure{
+                text-align: center;
+                img{
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
