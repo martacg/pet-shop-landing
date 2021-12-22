@@ -13,6 +13,7 @@ body{
 }
 a:hover{
     opacity: .8;
+    @include transition;
 }
 .btn{
     font-family: 'Montserrat', sans-serif;
